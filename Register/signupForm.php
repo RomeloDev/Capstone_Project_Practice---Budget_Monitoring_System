@@ -21,6 +21,9 @@
             <input type="password" name="password" id="password" required><br>
             <input type="submit" value="SIGN UP" name="submit">
         </form>
+        <div class="redirect">
+            <p>Already have an account? <a href="../index.php">Login</a></p>
+        </div>
     </div>
 </body>
 </html>

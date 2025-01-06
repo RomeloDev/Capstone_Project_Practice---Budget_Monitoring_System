@@ -19,7 +19,8 @@
             $stmt->execute();
             $result = $stmt->fetch();
             if($result){
-                echo "<script>alert('Account on this Department is already created!')</script>";
+                echo "<script>alert('Account on this Department is already created!')
+                window.location.href='../Register/signupForm.php';</script>";
                 exit();
             }else{$this->register();}
         }

@@ -19,7 +19,10 @@
                 if(password_verify($this->password, $result['password'])){
                     echo "<script>alert('Login Successful!')</script>";
                 }else{
-                    echo "<script>alert('Invalid Password!')</script>";
+                    echo "<script>
+                    alert('Invalid Password!');
+                    window.location.href='../index.php';
+                    </script>";
                     exit();
                 }
             }else{
