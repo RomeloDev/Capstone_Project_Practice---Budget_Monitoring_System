@@ -1,4 +1,6 @@
 <?php
+    session_start();
+
     class Login extends Database{
         private $username;
         private $password;
@@ -18,6 +20,7 @@
             if($query->rowCount() > 0){
                 if(password_verify($this->password, $result['password'])){
                     echo "<script>alert('Login Successful!')</script>";
+                    $_SESSION['status'] = 'valid';
                 }else{
                     echo "<script>
                     alert('Invalid Password!');
