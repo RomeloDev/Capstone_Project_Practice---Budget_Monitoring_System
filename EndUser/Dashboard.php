@@ -21,7 +21,7 @@
                     <li><a href="#">View Budget</a></li>
                     <li><a href="#">Purchase Requests</a></li>
                     <li><a href="#">Settings</a></li>
-                    <li><a href="#">Logout</a></li>
+                    <li><a href="../Handler/logout.handler.php">Logout</a></li>
                 </ul>
             </nav>
         </aside>
@@ -29,7 +29,7 @@
         <!-- Main Content -->
         <main class="content">
             <header>
-                <h1>Welcome, [End User Name]</h1>
+                <h1>Welcome, <?php echo $_SESSION['username']; ?></h1>
                 <p>Your department's current budget status is shown below.</p>
             </header>
 
@@ -84,9 +84,6 @@
                 </table>
             </section>
         </main>
-        <form action="../Handler/logout.handler.php" method="get">
-        <button name="logout">LOGOUT</button>
-    </form>
     </div>
 </body>
 </html>

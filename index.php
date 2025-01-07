@@ -16,19 +16,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="Styles/style.userlogin.css">
 </head>
 <body>
     <div class="container">
-        <h1>Login</h1>
+        <div class="login-form">
+        <h2>Login</h2>
         <form action="Handler/login.handler.php" method="post">
-            <label for="username">Username:</label><br>
-            <input type="text" name="username" id="username" required><br>
-            <label for="password">Password:</label><br>
-            <input type="password" name="password" id="password"><br>
-            <input type="submit" value="LOGIN" name="submit">
-        </form>
-        <div class="redirect">
+            <input type="text" name="username" id="username" placeholder="Username:" required><br>
+            <input type="password" name="password" id="password" placeholder="Password:" required><br>
+            <button type="submit" name="submit">LOGIN</button>
             <p>Don't have an account? <a href="Register/signupForm.php">Register</a></p>
+        </form>
         </div>
     </div>
 </body>
